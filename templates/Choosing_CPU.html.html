@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <head>
-  <title>UCS Servers choosing tool!</title>!
+  <title>UCS Servers choosing tool!</title>
 <body>
-    <h1>Which type of CPU do you need</h1>
-</body>
-<form action="." method"POST">
-  <input type="radio" name="name" value="E5"> E5-2600v3/v4<br>
-  <input type="radio" name="name" value="E72"> E7-4800/8800 v2<br>
-  <input type="radio" name="name" value="E73"> E7-4800/8800 v3 <br><br>
-  <input type="submit" value="Submit">
+    <h1>How many RU do you need? (1,2,4 RU)</h1>
+<form method="POST">
+	<div>
+        <input type="radio" name="submittedAnswer" value="E5"> E5-2600v3/v4<br>
+  		<input type="radio" name="submittedAnswer" value="E72"> E7-4800/8800 v2<br>
+  		<input type="radio" name="submittedAnswer" value="E73"> E7-4800/8800 v3 <br><br>
+     </div>
+  
+  <div>
+     <button type="submit">Submit</button>
+  </div>
 </form>
+</body>
 </html>	
+  
+
+

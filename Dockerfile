@@ -1,15 +1,15 @@
-FROM alpine:3.1
+FROM python:3.5
 
 # Update
-RUN apk add --update python py-pip
+#RUN apk add --update python py-pip
 
 # Install app dependencies
 RUN pip install Flask
 
 # Bundle app source
-COPY helloworld.py /src/helloworld.py
+COPY routes.py /src/routes.py
 
 COPY templates /src/templates
 
-EXPOSE  8000
-CMD ["python", "/src/helloworld.py", "-p 8000"]
+EXPOSE  9000
+CMD ["python", "/src/routes.py", "-p 9000"]

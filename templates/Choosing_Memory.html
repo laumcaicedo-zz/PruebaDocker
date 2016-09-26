@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <head>
-  <title>UCS Servers choosing tool!</title>!
+  <title>UCS Servers choosing tool!</title>
 <body>
-    <h1>How much memory do you need?</h1>
-</body>
-<form action="." method"POST">
-  <input type="radio" name="name" value="1RU"> 1RU<br>
-  <input type="radio" name="name" value="2RU"> 2RU<br>
-  <input type="radio" name="name" value="4RU"> 3RU <br><br>
-  <input type="submit" value="Submit">
+    <h1>How many RU do you need? (1,2,4 RU)</h1>
+<form method="POST">
+	<div>
+        <input type="radio" name="submittedAnswer" value="Small"> 0 - 1.5TB<br>
+  		<input type="radio" name="submittedAnswer" value="Large"> More than 1.5TB<br><br>
+     </div>
+  
+  <div>
+     <button type="submit">Submit</button>
+  </div>
 </form>
+</body>
 </html>	
