@@ -1,10 +1,32 @@
-version: 0.2
-
 phases:
-  pre_build:
-    commands:
-      - docker build -t helloworld .
+
   build:
+
     commands:
-      - docker images
-      - docker run helloworld echo "Hello, World!"
+
+      - "echo Build started on `date`"
+
+      - "echo Building the Docker image..."
+
+      - "docker build -t laumcaicedo/codebuild:latest ."
+
+      - "docker tag laumcaicedo/codebuild:latest laumcaicedo/codebuild:latest"
+
+    post_build:
+
+      commands:
+
+      - "echo Build completed on `date`"
+
+      - "echo Pushing the Docker image..."
+
+      - "docker push laumcaicedo/codebuild:latest"
+
+    pre_build:
+
+    commands:
+
+      - "echo Logging in to Docker Hub..."
+
+
+version: 0.2
