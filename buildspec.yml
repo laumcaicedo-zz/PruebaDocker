@@ -8,7 +8,6 @@ phases:
 
       - "echo Logging in to Docker Hub..."
 
-      - "docker login --username=\"laumcaicedo\" --password=\"passw0rd\""
 
   build:
 
