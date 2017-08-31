@@ -17,7 +17,7 @@ phases:
 
       - "echo Building the Docker image..."
 
-      - "docker build -t lhelloworld ."
+      - "docker build -t helloworld ."
 
 
   post_build:
