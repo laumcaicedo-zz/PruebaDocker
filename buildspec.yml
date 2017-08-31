@@ -17,9 +17,8 @@ phases:
 
       - "echo Building the Docker image..."
 
-      - "docker build -t laumcaicedo/APPDemoGVE:latest ."
+      - "docker build -t lhelloworld ."
 
-      - "docker tag dlaumcaicedo/APPDemoGVE:latest laumcaicedo/APPDemoGVE:latest"
 
   post_build:
 
@@ -29,6 +28,5 @@ phases:
 
       - "echo Pushing the Docker image..."
 
-      - "docker push laumcaicedo/APPDemoGVE:latest"
 
  
